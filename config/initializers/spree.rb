@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Configure Spree Preferences
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
@@ -13,8 +15,11 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+
 end
 
-Spree.user_class = "Spree::User"
-
+Spree.user_class = 'Spree::User'
 Spree::Api::Config[:requires_authentication] = false
+Rails.application.config.spree.payment_methods << Spree::PaymentMethod::Payubiz
+Rails.application.config.spree.payment_methods << Spree::PaymentMethod::Cod
+Spree::Product.whitelisted_ransackable_attributes.push('avg_rating', 'reviews_count', 'favorite_users_count')

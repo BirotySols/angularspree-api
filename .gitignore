@@ -11,10 +11,36 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore spree folder in public
+/public/spree
+/config/deploy.rb
+
+.env.*
+.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
 
-# Ignore spree folder in public
-/public/spree/products
+# Ignore uploaded files in development
+/storage/*
+
+/node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+.env.example
+.env.example
+public/uploads/.~lock.shipment_pincodes.csv#
+public/uploads/.DS_Store
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
+public/.DS_Store
+lib/.DS_Store

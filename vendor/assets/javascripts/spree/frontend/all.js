@@ -6,7 +6,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require accounting.min
 //= require spree/frontend
 
 //= require_tree .
 //= require spree/frontend/spree_auth
+
+//= require store/spree_favorite_products
+
+//= require spree/frontend/spree_favorite_products
+//= require spree/frontend/spree_admin_roles_and_access
+//= require spree/frontend/spree_recently_viewed
+//= require spree/frontend/spree_reviews
+//= require spree/frontend/spree_events_tracker
+//= require spree/frontend/spree_admin_insights
+//= require spree/frontend/spree_analytics_trackers
