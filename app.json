@@ -1,7 +1,7 @@
 {
   "name": "Angular Spree Api Sandbox",
   "description": "Api for Angular Spree",
-  "repository": "https://github.com/aviabird/angularspree-api",
+  "repository": "https://github.com/birotysols/angularspree-api",
   "logo": "http://res.cloudinary.com/mally/image/upload/v1490186051/Angular_spree_hqgwtq.png",
   "keywords": ["angular", "rails", "spree"],
   "buildpacks": [
